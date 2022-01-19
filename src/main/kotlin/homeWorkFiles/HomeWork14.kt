@@ -15,9 +15,15 @@ fun main() {
 }
 
 fun alternateSum(vararg mNumbers: Int): Int {
-    val mResult = 0
-    for (item in mNumbers){
-
+    var mResult = 0
+    var mToggle = true
+    for (item in mNumbers) {
+        if (mToggle) {
+            mResult += item
+        } else {
+            mResult -= item
+        }
+        mToggle = !mToggle
     }
-    return 0
+    return mResult
 }
