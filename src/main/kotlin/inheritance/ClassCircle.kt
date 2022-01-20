@@ -1,3 +1,5 @@
+package inheritance
+
 /***************************************************************************************************
  * Copyright (c) 2022. Mr.Ahirrao
  * All right reserved.
@@ -7,14 +9,14 @@
 
 class ClassCircle(
     val mRadius: Double
-) {
+) : ClassShape("Circle") {
     //Variables
     val pi = 3.141592
 
     init {
-        println("Circle created with radius = $mRadius")
-        println("Circle area is : ${circleArea()}")
-        println("Circle perimeter is :${perimeter()}")
+        println("$name created with radius = $mRadius")
+        println("$name area is : ${circleArea()}")
+        println("$name perimeter is :${perimeter()}")
     }
 
     //fun area

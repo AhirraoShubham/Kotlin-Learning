@@ -5,11 +5,16 @@
  * Learn Kotlin with Mr.Ahirrao
  **************************************************************************************************/
 
-package homeWorkFiles
+package homeWorkFiles.homework17
 
-// create a class called triangle it takes 3 parameter in constructor
-//and that class calculate the area of triangle and perimeter
+open class Car(
+    var mCarName: String
+) {
+    init {
+        println("Welcome to the $mCarName Car world!")
+    }
 
-fun main() {
-    val myCircle = ClassTriangle(2.0, 4.0, 6.0)
+    fun mChangeCarName(mName: String) {
+        mCarName = mName
+    }
 }

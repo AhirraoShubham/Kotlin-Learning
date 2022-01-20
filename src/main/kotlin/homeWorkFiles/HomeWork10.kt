@@ -10,7 +10,7 @@ package homeWorkFiles
 //easy
 //Accept a numbers from user and print it in reverse order
 //
-//fun main() {
+//fun inheritance.main() {
 //    println("Enter 5 numbers :")
 //    val mList = mutableListOf<Int>()
 //    for (item in 1..5) {

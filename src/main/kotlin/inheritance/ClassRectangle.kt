@@ -1,3 +1,5 @@
+package inheritance
+
 /***************************************************************************************************
  * Copyright (c) 2022. Mr.Ahirrao
  * All right reserved.
@@ -10,9 +12,13 @@
 class ClassRectangle(
     val a: Double,
     val b: Double
-) {
+) : ClassShape("Rectangle") {
     init {
-        println("Rectangle created with a = $a and b = $b")
+        println("$name created with a = $a and b = $b")
+        println("$name area is : ${calcArea()}")
+        println("$name perimeter is ${perimeter()}")
+        println("$name is square?: ${isSquare()}")
+
     }
 
     //fun for calculate the area of rectangle

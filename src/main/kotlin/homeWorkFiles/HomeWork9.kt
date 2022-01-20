@@ -11,7 +11,7 @@ package homeWorkFiles
 //Easy HW
 //WAP to calculate the sum of array
 
-//fun main() {
+//fun inheritance.main() {
 //    //Easy
 //    val mArr = arrayOf(2, 5, 9, 6, 8, 7, 4, 1, 20)
 //    var mSum = 0
