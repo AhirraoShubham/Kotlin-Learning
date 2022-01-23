@@ -28,7 +28,6 @@ class ClassRectangle(
             val randomRectB = Random.nextDouble(1.0, 15.0)
             return ClassRectangle(randomRectA, randomRectB)
         }
-
     }
 
     init {

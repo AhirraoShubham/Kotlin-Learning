@@ -7,9 +7,9 @@
 
 package abstract_class
 
-import object_and_companion_object.ClassCircle
-import object_and_companion_object.ClassRectangle
-import object_and_companion_object.ClassTriangle
+import anonymous_class.ClassCircle
+import anonymous_class.ClassRectangle
+import anonymous_class.ClassTriangle
 
 //Here we will learn about abstract class
 

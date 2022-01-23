@@ -1,6 +1,6 @@
-package abstract_class
+package anonymous_class
 
-import anonymous_class.ClassShape
+import kotlin.random.Random
 
 /***************************************************************************************************
  * Copyright (c) 2022. Mr.Ahirrao
@@ -12,9 +12,25 @@ import anonymous_class.ClassShape
 //Here we will learn about class
 
 class ClassRectangle(
-    val a: Double,
+    val a: Double,          //primary constructor
     val b: Double
 ) : ClassShape("Rectangle") {
+
+    //secondary constructor
+    constructor(a: Double) : this(a, a)
+
+    constructor(a: Int, b: Int) : this(a.toDouble(), b.toDouble())
+
+    //HomeWork 19 continue...
+    companion object {
+        fun randomRectangle(): ClassRectangle {
+            val randomRectA = Random.nextDouble(1.0, 15.0)
+            val randomRectB = Random.nextDouble(1.0, 15.0)
+            return ClassRectangle(randomRectA, randomRectB)
+        }
+
+    }
+
     init {
         println("$name created with a = $a and b = $b")
         println("$name area is : ${area()}")

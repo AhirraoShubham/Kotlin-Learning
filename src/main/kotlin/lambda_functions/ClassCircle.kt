@@ -1,6 +1,6 @@
-package abstract_class
+package lambda_functions
 
-import anonymous_class.ClassShape
+import kotlin.random.Random
 
 /***************************************************************************************************
  * Copyright (c) 2022. Mr.Ahirrao
@@ -12,10 +12,14 @@ import anonymous_class.ClassShape
 class ClassCircle(
     val mRadius: Double
 ) : ClassShape("Circle") {
-    //Variables
-    //Visibility modifier
-    //private
-    private val pi = 3.141592
+
+    //Companion object :
+    companion object {
+        fun randomCircle(): ClassCircle {
+            val radius = Random.nextDouble(1.0, 10.0)
+            return ClassCircle(radius)
+        }
+    }
 
     init {
         println("$name created with radius = $mRadius")
@@ -24,8 +28,8 @@ class ClassCircle(
     }
 
     //fun area
-    override fun area() = mRadius * mRadius * pi
+    override fun area() = mRadius * mRadius * ImportantNumbers.PI
 
     //perimeter
-    override fun perimeter() = 2 * mRadius * pi
+    override fun perimeter() = 2 * mRadius * ImportantNumbers.PI
 }

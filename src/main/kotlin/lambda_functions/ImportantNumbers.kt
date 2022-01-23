@@ -5,12 +5,9 @@
  * Learn Kotlin with Mr.Ahirrao
  **************************************************************************************************/
 
-package object_and_companion_object
+package lambda_functions
 
-//Here we will learn about objects and companion objects
-
-fun main() {
-    val mCircle = ClassCircle.randomCircle()
-    //Homework19
-    val mRect = ClassRectangle.randomRectangle()
+//Singleton object is an object where only one instance of exist
+object ImportantNumbers {
+    val PI = 3.141592
 }

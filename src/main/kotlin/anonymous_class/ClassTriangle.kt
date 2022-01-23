@@ -1,4 +1,4 @@
-package abstract_class
+package anonymous_class
 
 /***************************************************************************************************
  * Copyright (c) 2022. Mr.Ahirrao
@@ -7,7 +7,6 @@ package abstract_class
  * Learn Kotlin with Mr.Ahirrao
  **************************************************************************************************/
 
-import anonymous_class.ClassShape
 import kotlin.math.sqrt
 
 //Homework 16 class file

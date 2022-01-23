@@ -5,12 +5,9 @@
  * Learn Kotlin with Mr.Ahirrao
  **************************************************************************************************/
 
-package object_and_companion_object
+package homeWorkFiles.homework21
 
-//Here we will learn about objects and companion objects
-
+//Homework for exception
 fun main() {
-    val mCircle = ClassCircle.randomCircle()
-    //Homework19
-    val mRect = ClassRectangle.randomRectangle()
+    val circle = ClassCircle(-5.0)
 }
